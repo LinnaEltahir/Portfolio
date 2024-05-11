@@ -2,35 +2,28 @@
 
 *{
     margin: 0;
-    padding: 0;
-    font-family: space grotesk;
+    padding: 0;  
+    box-sizing: border-box;
+    font-family: Kalnia;
+    font-weight: bolder;
+    color: #302534;
 }
+
 body{
-    background-color: black;
-    color: palevioletred;
+    background-position: 100%;
+    background-color: #D0A9F5;
+    display: flex;
+      flex-direction: column;
+      min-height: 100vh; 
 }
-
-
-
-.banner{
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-}
-
+/*nav bar*/
 .navbar{
-    width: 85%;
+    width: 95%;
     margin: auto;
     padding: 35px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.logo{
-    width: 5%;
-    cursor: pointer;
 }
 
 .navbar ul li{
@@ -39,109 +32,174 @@ body{
     margin: 0 20px;
     position: relative;
 }
-
 .navbar ul li a{
     text-decoration: none;
-    color: palevioletred;
+    color: #302534;
     text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 1000;
+    font-family: 'Abril Fatface', cursive;
 }
-
 .navbar ul li::after{
     content: '';
     height: 3px;
     width: 100%;
-    background: grey;
+    /*background: #FA58AC;*/
+    background: black;
     position: absolute;
     left: 0;
     bottom: -10px;
     transition: 0.5s;
 }
-.navbar ul li:hover::after{
-    width: 100%;
+.animated-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.content{
+.animated-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
+.animated-menu{
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.animated-menu:hover{
+ transform: scale(1.1);
+}
+/*nav bar*/
+
+/*I'm Linna & Frontend dev section*/
+.header h1{
+    font-size: 90px;
+    font-family: 'Abril Fatface', cursive;
+    margin-top: 45px;
     width: 100%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
-    color: #F9629F;
-    font-size: larger;
-    font-family: space grotesk;
+    margin: 10px;
 }
-
-.content p, h3 {
-    margin: 20px auto;
-    font-weight: 100;
-    line-height: 25px;
-    font-family: space grotesk;
+.job p{
     font-size: 30px;
-    position: relative;
-}
-
-.content button{
-    font-family: space grotesk;
-    font-size: 15px;
-}
-
-.content h1{
-    font-size: 50px;
-}
-
-button{
-    width: 200px;
-    padding: 15px 0;
-    text-align: center;
-    margin: 20px 10px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid grey;
-    background-color: grey;
-    color: palevioletred;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-
-span {
-    height: 100%;
+    margin-top: 95px;
     width: 100%;
-    border-radius: 25px;
     position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-weight:bolder;
+    font-family: 'Abril Fatface', cursive;
+    /*color: #FA58AC;*/
 }
-
-button:hover span{
-    width: 100%;
-}
-
-button:hover{
-    border: none;
-}
-
-
-.footer {
-    background-color: #333;
-    color: #6ebdb6;
-    padding: 20px;
+/*Github & Linkedin bottons/icons*/
+.icon {
+    cursor: pointer;
+  }
+  #socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25rem;
+    gap: 2rem;
+  }
+/* ABOUT ME*/ 
+h2 {
+    font-size: 50px;
+    /*color: #ECCEF5;*/
+    margin-top: 100px; 
     text-align: center;
 }
+ /*try to change the font of this paragraph*/
+    .about {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 1px;
+    font-size: large;
+    font-weight: bolder;
+    line-height: 1.6;
+   
+     }
 
-/* ABOUT ME*/
- .me p{
-    font-size: medium;
- }
-  /*Projects Page*/
+     /*tech stack*/
+      .column { /*figure out how to child thois with the hjtml*/
+     min-width: 50px;
+        padding: 50px;
+        float: left;
+        width: 33%;
+        height: 100%;
+        flex: 30%;
+        text-align: center;
+        }
+    /* Contact us*/
+    /*try fix issue with the menu and the contact page*/
+     .contact-form{
+        width: 85%;
+        max-width: 600px;
+        background: #f1f1f1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 30px 40px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        text-align: center;
+        border-bottom: 0 0 20px #000000b3;
+        font-weight: bolder;
+     }
 
+     .contact-form h2{
+        margin-top: 0;
+        font-weight: 200;
+        
+     }
 
- 
- 
- 
- 
-  /* CV */
-  /* ABOUT ME*/
-  
+     .txtb{
+        border: 1px solid gray;
+        padding: 12px 18px;
+        margin: 8px 0;
+        border-radius: 8px;
+     }
+     .txtb label{
+        display: block;
+        text-align: left;
+        color: #333;
+        text-transform: uppercase;
+        font-size: 14px;
+         }
+
+     .txtb input, .txtb textarea{
+        width: 100%;
+        border: none;
+        background: none;
+        outline: none;
+        font-size: 18px;
+        margin-top: 6px;
+     }
+
+     .btn{
+        display: inline-block;
+        background: #9b59b6;
+        padding: 14px 0;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-top: 8px;
+        width: 100%;
+     }
+     .footer {
+        background-color: #4D5C33;
+        color: white;
+        text-align: center;
+        padding: 10px;
+     }
+     
